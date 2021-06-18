@@ -5,7 +5,7 @@ clear all;
 
 name_bin = '2021-04-28_40m_3f';
 name_bag = '2021-04-28_40m_3f' 
-name_output = 'example' 
+name_output = '2021-04-28_40m_3f' 
 bagfile = ['Data/' name_bag '.bag']; 
 bin_EKF_file = ['Data/' name_bin '_EKF_Log.csv']; % EKF file
 bin_GPS_file = ['Data/' name_bin '_GPS_Log.csv']; % GPS file

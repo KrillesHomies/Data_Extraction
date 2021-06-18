@@ -12,7 +12,7 @@
 % on the settings of which data that is exported, then this might need some modifications.
 %
 % Segment_data.m is used to segment the data for the EKF. Typically good to have margin with GPS data
-% for the filter to be able to locate itself (maybe ), but not too much sinces it will become slow
+% for the filter to be able to locate itself (maybe ), but not too much sinces it will make the process slow
 %
 % InertialSensorUtils_GUI behövs för att extrahera data från bin filer
 % Detta program kan hämtas här: https://s3.amazonaws.com/download.microstrain.com/InertialSensorUtils_GUI_exe.zip

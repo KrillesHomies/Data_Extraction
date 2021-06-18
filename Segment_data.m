@@ -7,6 +7,8 @@
 %
 % The data files are given from the funtion for combining the INS data with
 % the ROS data
+%
+% The cuts points are manually picked 
 
 close all; clear all;
 addpath(genpath('Processed_Data'))
@@ -20,6 +22,7 @@ load(input_file_name)
 plot(Data.pressure.pressure);
 xlabel('Samples')
 xlabel('Pressure')
+disp('Select Cut Points in the next section')
 %% Pick place to cut based on pressure data sample
 
 
