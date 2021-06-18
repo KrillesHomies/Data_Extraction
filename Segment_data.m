@@ -21,20 +21,11 @@ plot(Data.pressure.pressure);
 xlabel('Samples')
 xlabel('Pressure')
 %% Pick place to cut based on pressure data sample
-% Cut = [3500 15000];
-%Cut = [2000 5600];
 
-%Cut = [33590 47065];
-% Cut = [32000 51000];
-% Cut = [58000 70500];
-%Cut = [5600 9000];
-%Cut = [60000 70000];
-%Cut = [30200 50200];
-% Cut = [9200 11600];
 
-Cut = [33590 47065];
-Cut = [16500 30000];
-% Cut = [3500 15000];
+% Cut = [33590 47065]; % set 3
+% Cut = [17800 30000]; % set 2
+Cut = [3500 15000]; % set 1
 
 %% Extract Pressure Data
 Data_N = [];
@@ -110,7 +101,7 @@ Data_N.IMU.gyro = Data.IMU.gyro(:,i_start_imu:i_stop_imu);
 Data_N.IMU.mag = Data.IMU.mag(:,i_start_imu:i_stop_imu);
 Data_N.IMU.CF = Data.IMU.CF(:,i_start_imu:i_stop_imu);
 
-save(['segmented_Data/' output_file_name],'Data');
+save(['segmented_Data/' output_file_name],'Data_N');
 
 %% Add NILUS data according to GPS time stamp % uncomment if nilus data is also used
 
